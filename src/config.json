@@ -1,0 +1,14 @@
+{
+	"general":{
+		"image_height":"27",
+		"image_width":"23",
+		"background_color":"#ff22aa",
+	},
+	"glyphs":{
+		"glyph_set":"laf12a",
+		"font_family":"pixel_font",
+		"font_size":"14",
+		"font_padding":"",
+		"color_set":["#ffffff","#002233"], 
+	}
+}
