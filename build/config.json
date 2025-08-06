@@ -1,0 +1,15 @@
+{
+	"general":{
+		"image_height":,
+		"image_width":,
+		"background_color":"#212121"
+	},
+	"glyphs":{
+		"inTiles":true,
+		"glyph_set":10,
+		"font_family":"pixel_font",
+		"font_size":14,
+		"font_padding":2,
+		"color_set":["#ffffff","#002233"]
+	}
+}

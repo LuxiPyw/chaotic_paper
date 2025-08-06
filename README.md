@@ -1,0 +1,2 @@
+Chaotic paper requers Magick++.
+
