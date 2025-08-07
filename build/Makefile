@@ -201,6 +201,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/makeColorSet.o: src/makeColorSet.cpp.o
+.PHONY : src/makeColorSet.o
+
+# target to build an object file
+src/makeColorSet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/makeColorSet.cpp.o
+.PHONY : src/makeColorSet.cpp.o
+
+src/makeColorSet.i: src/makeColorSet.cpp.i
+.PHONY : src/makeColorSet.i
+
+# target to preprocess a source file
+src/makeColorSet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/makeColorSet.cpp.i
+.PHONY : src/makeColorSet.cpp.i
+
+src/makeColorSet.s: src/makeColorSet.cpp.s
+.PHONY : src/makeColorSet.s
+
+# target to generate assembly for a file
+src/makeColorSet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/makeColorSet.cpp.s
+.PHONY : src/makeColorSet.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/makeColorSet.o"
+	@echo "... src/makeColorSet.i"
+	@echo "... src/makeColorSet.s"
 .PHONY : help
 
 

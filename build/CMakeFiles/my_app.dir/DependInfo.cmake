@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/luxipew/Documents/projects/wallpaper_generator/src/config_reader.cpp" "CMakeFiles/my_app.dir/src/config_reader.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/config_reader.cpp.o.d"
   "/home/luxipew/Documents/projects/wallpaper_generator/src/glyphs.cpp" "CMakeFiles/my_app.dir/src/glyphs.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/glyphs.cpp.o.d"
   "/home/luxipew/Documents/projects/wallpaper_generator/src/main.cpp" "CMakeFiles/my_app.dir/src/main.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/main.cpp.o.d"
+  "/home/luxipew/Documents/projects/wallpaper_generator/src/makeColorSet.cpp" "CMakeFiles/my_app.dir/src/makeColorSet.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/makeColorSet.cpp.o.d"
   "" "my_app" "gcc" "CMakeFiles/my_app.dir/link.d"
   )
 

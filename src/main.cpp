@@ -13,14 +13,14 @@ int makeImage ()
 	std::cout << "Aborting";
 			return 1;
 	}
-	int test = glyphs(config);
-	std::cout << test;
+	glyphs(config);
 	return 0;
 	
 }
 
-int main ()
+int main (int argc,char *argv[])
 {
+	InitializeMagick(*argv);
 	makeImage();
 	return 0;
 

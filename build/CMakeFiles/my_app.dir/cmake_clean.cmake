@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_app.dir/src/glyphs.cpp.o.d"
   "CMakeFiles/my_app.dir/src/main.cpp.o"
   "CMakeFiles/my_app.dir/src/main.cpp.o.d"
+  "CMakeFiles/my_app.dir/src/makeColorSet.cpp.o"
+  "CMakeFiles/my_app.dir/src/makeColorSet.cpp.o.d"
   "my_app"
   "my_app.pdb"
 )

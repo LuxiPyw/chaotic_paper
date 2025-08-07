@@ -10,7 +10,8 @@ find_package(ImageMagick COMPONENTS Magick++ REQUIRED)
 add_executable(my_app 
 	src/main.cpp
 	src/glyphs.cpp
-	src/config_reader.cpp)
+	src/config_reader.cpp
+	src/makeColorSet.cpp)
 
 target_include_directories(my_app PRIVATE
 	${CMAKE_SOURCE_DIR}/dependencies
