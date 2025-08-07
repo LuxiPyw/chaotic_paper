@@ -7,7 +7,7 @@ using json = nlohmann::json;
 int readConfig(json& json_value)
 {
 	
-	std::ifstream file("config.json");
+	std::ifstream file("config/config.json");
 	if (!file.is_open()) {
 		std::cerr << "Error. Can't open config file\n";
 		return 1;

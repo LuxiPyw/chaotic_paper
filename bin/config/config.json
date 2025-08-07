@@ -1,13 +1,13 @@
 {
 	"general":{
-		"image_height":100,
-		"image_width":100,
+		"image_height":20,
+		"image_width":20,
 		"background_color":"#212121"
 	},
 	"glyphs":{
 		"inTiles":true,
 		"glyph_set":"abc",
-		"font_family_set":[""],
+		"font_family_set":["pixel_font"],
 		"font_size":14,
 		"font_padding":2,
 		"color_set_size":2,

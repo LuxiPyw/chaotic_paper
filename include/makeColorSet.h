@@ -1,6 +1,6 @@
 #include <nlohmann/json.hpp>
-#include <Magick++.h>
-using namespace Magick;
+#include <string>
+using string = std::string;
 using json = nlohmann::json;
 
-void makeColorSet (int&, Color*, json& );
+void makeColorSet (int&, string*, json& );
