@@ -33,6 +33,8 @@ int glyphs (json& config)
 	int font_size = config["glyphs"]["font_size"].get<int>();
 	int font_padding = config["glyphs"]["font_padding"].get<int>();
 
+	int image_scale = config["general"]["image_scale"].get<int>();
+
 	int color_set_size = config["glyphs"]["color_set_size"].get<int>();
 	string backgroundColor (config["general"]["background_color"].get<string>());
 	string color_set [color_set_size];
@@ -43,17 +45,19 @@ int glyphs (json& config)
 	canvas.size(Geometry(image_width,image_height));
 	canvas.backgroundColor(Color(backgroundColor));
 	//font
-	canvas.font("fonts/Tinyunicode.ttf");
+	canvas.font("fonts/Hack.ttf");
     canvas.fontPointsize(font_size);
 	//Antialias
 	canvas.strokeAntiAlias(false);
 	canvas.textAntiAlias(false);
 
 	string glyph_set = config["glyphs"]["glyph_set"].get<string>();
+	std::srand(static_cast<unsigned int>(time(nullptr)));
+	std::cout << image_height << "\n";
+	std::cout << image_width << "\n";
+	for (int x = font_padding; x + font_size <= image_width; x += font_size+font_padding) {
 
-	for (int x = font_padding; x < image_width; x += font_size+font_padding) {
-
-		for (int y = font_padding; y < image_height; y += font_size+font_padding) {
+		for (int y = 0; y + font_size <= image_height; y += font_size+font_padding) {
 
 			string rand_glyph = string(1, glyph_set[rand() % glyph_set.size()]);
 			string rand_color = color_set[rand() % color_set_size];
@@ -67,6 +71,8 @@ int glyphs (json& config)
 		}
 	}
 
+	canvas.filterType(PointFilter);
+	canvas.resize(Geometry(image_width*image_scale,image_height*image_scale));
 	canvas.write("output.png");
 	return 0;
 
