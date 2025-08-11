@@ -86,67 +86,51 @@ CMakeFiles/my_app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxipew/Documents/projects/wallpaper_generator/src/main.cpp -o CMakeFiles/my_app.dir/src/main.cpp.s
 
-CMakeFiles/my_app.dir/src/glyphs.cpp.o: CMakeFiles/my_app.dir/flags.make
-CMakeFiles/my_app.dir/src/glyphs.cpp.o: /home/luxipew/Documents/projects/wallpaper_generator/src/glyphs.cpp
-CMakeFiles/my_app.dir/src/glyphs.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_app.dir/src/glyphs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/glyphs.cpp.o -MF CMakeFiles/my_app.dir/src/glyphs.cpp.o.d -o CMakeFiles/my_app.dir/src/glyphs.cpp.o -c /home/luxipew/Documents/projects/wallpaper_generator/src/glyphs.cpp
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o: /home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o -MF CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o.d -o CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o -c /home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp
 
-CMakeFiles/my_app.dir/src/glyphs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/glyphs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxipew/Documents/projects/wallpaper_generator/src/glyphs.cpp > CMakeFiles/my_app.dir/src/glyphs.cpp.i
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/GlyphPattern.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp > CMakeFiles/my_app.dir/src/GlyphPattern.cpp.i
 
-CMakeFiles/my_app.dir/src/glyphs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/glyphs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxipew/Documents/projects/wallpaper_generator/src/glyphs.cpp -o CMakeFiles/my_app.dir/src/glyphs.cpp.s
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/GlyphPattern.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp -o CMakeFiles/my_app.dir/src/GlyphPattern.cpp.s
 
-CMakeFiles/my_app.dir/src/config_reader.cpp.o: CMakeFiles/my_app.dir/flags.make
-CMakeFiles/my_app.dir/src/config_reader.cpp.o: /home/luxipew/Documents/projects/wallpaper_generator/src/config_reader.cpp
-CMakeFiles/my_app.dir/src/config_reader.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_app.dir/src/config_reader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/config_reader.cpp.o -MF CMakeFiles/my_app.dir/src/config_reader.cpp.o.d -o CMakeFiles/my_app.dir/src/config_reader.cpp.o -c /home/luxipew/Documents/projects/wallpaper_generator/src/config_reader.cpp
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.o: /home/luxipew/Documents/projects/wallpaper_generator/src/ImageMaker.cpp
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_app.dir/src/ImageMaker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/ImageMaker.cpp.o -MF CMakeFiles/my_app.dir/src/ImageMaker.cpp.o.d -o CMakeFiles/my_app.dir/src/ImageMaker.cpp.o -c /home/luxipew/Documents/projects/wallpaper_generator/src/ImageMaker.cpp
 
-CMakeFiles/my_app.dir/src/config_reader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/config_reader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxipew/Documents/projects/wallpaper_generator/src/config_reader.cpp > CMakeFiles/my_app.dir/src/config_reader.cpp.i
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/ImageMaker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxipew/Documents/projects/wallpaper_generator/src/ImageMaker.cpp > CMakeFiles/my_app.dir/src/ImageMaker.cpp.i
 
-CMakeFiles/my_app.dir/src/config_reader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/config_reader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxipew/Documents/projects/wallpaper_generator/src/config_reader.cpp -o CMakeFiles/my_app.dir/src/config_reader.cpp.s
-
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.o: CMakeFiles/my_app.dir/flags.make
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.o: /home/luxipew/Documents/projects/wallpaper_generator/src/makeColorSet.cpp
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_app.dir/src/makeColorSet.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/makeColorSet.cpp.o -MF CMakeFiles/my_app.dir/src/makeColorSet.cpp.o.d -o CMakeFiles/my_app.dir/src/makeColorSet.cpp.o -c /home/luxipew/Documents/projects/wallpaper_generator/src/makeColorSet.cpp
-
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/makeColorSet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxipew/Documents/projects/wallpaper_generator/src/makeColorSet.cpp > CMakeFiles/my_app.dir/src/makeColorSet.cpp.i
-
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/makeColorSet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxipew/Documents/projects/wallpaper_generator/src/makeColorSet.cpp -o CMakeFiles/my_app.dir/src/makeColorSet.cpp.s
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/ImageMaker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxipew/Documents/projects/wallpaper_generator/src/ImageMaker.cpp -o CMakeFiles/my_app.dir/src/ImageMaker.cpp.s
 
 # Object files for target my_app
 my_app_OBJECTS = \
 "CMakeFiles/my_app.dir/src/main.cpp.o" \
-"CMakeFiles/my_app.dir/src/glyphs.cpp.o" \
-"CMakeFiles/my_app.dir/src/config_reader.cpp.o" \
-"CMakeFiles/my_app.dir/src/makeColorSet.cpp.o"
+"CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o" \
+"CMakeFiles/my_app.dir/src/ImageMaker.cpp.o"
 
 # External object files for target my_app
 my_app_EXTERNAL_OBJECTS =
 
 /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/src/main.cpp.o
-/home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/src/glyphs.cpp.o
-/home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/src/config_reader.cpp.o
-/home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/src/makeColorSet.cpp.o
+/home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o
+/home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/src/ImageMaker.cpp.o
 /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/build.make
 /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/compiler_depend.ts
 /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: /usr/lib/libMagick++-7.Q16HDRI.so
 /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app: CMakeFiles/my_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/luxipew/Documents/projects/wallpaper_generator/bin/my_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

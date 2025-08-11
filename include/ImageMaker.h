@@ -1,6 +1,7 @@
 #include <string>
 #include <nlohmann/json.hpp>
 #include <memory>
+#include "ImagePattern.h"
 using json = nlohmann::json;
 
 class ImageMaker {

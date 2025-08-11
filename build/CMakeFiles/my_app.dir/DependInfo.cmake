@@ -8,10 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/luxipew/Documents/projects/wallpaper_generator/src/config_reader.cpp" "CMakeFiles/my_app.dir/src/config_reader.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/config_reader.cpp.o.d"
-  "/home/luxipew/Documents/projects/wallpaper_generator/src/glyphs.cpp" "CMakeFiles/my_app.dir/src/glyphs.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/glyphs.cpp.o.d"
+  "/home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp" "CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o.d"
+  "/home/luxipew/Documents/projects/wallpaper_generator/src/ImageMaker.cpp" "CMakeFiles/my_app.dir/src/ImageMaker.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/ImageMaker.cpp.o.d"
   "/home/luxipew/Documents/projects/wallpaper_generator/src/main.cpp" "CMakeFiles/my_app.dir/src/main.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/main.cpp.o.d"
-  "/home/luxipew/Documents/projects/wallpaper_generator/src/makeColorSet.cpp" "CMakeFiles/my_app.dir/src/makeColorSet.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/makeColorSet.cpp.o.d"
   "" "/home/luxipew/Documents/projects/wallpaper_generator/bin/my_app" "gcc" "CMakeFiles/my_app.dir/link.d"
   )
 

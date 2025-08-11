@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <Magick++.h>
 #include <nlohmann/json.hpp>

@@ -1,3 +1,5 @@
+#include <string>
+#include <vector>
 #include "ImagePattern.h"
 
 class GlyphPattern : public ImagePattern{
@@ -7,8 +9,8 @@ public:
 protected:
 	int fontSize;
 	int fontPadding;
-	std::string font_family_set;
-	std::string glyph_set;
-	int color_set_size;
-	std::string color_set;
+	std::string fontFamilySet;
+	std::string glyphSet;
+	int colorSetSize;
+	std::vector<std::string> colorSet;
 };

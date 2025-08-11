@@ -129,53 +129,53 @@ my_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/build
 .PHONY : my_app/fast
 
-src/config_reader.o: src/config_reader.cpp.o
-.PHONY : src/config_reader.o
+src/GlyphPattern.o: src/GlyphPattern.cpp.o
+.PHONY : src/GlyphPattern.o
 
 # target to build an object file
-src/config_reader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/config_reader.cpp.o
-.PHONY : src/config_reader.cpp.o
+src/GlyphPattern.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o
+.PHONY : src/GlyphPattern.cpp.o
 
-src/config_reader.i: src/config_reader.cpp.i
-.PHONY : src/config_reader.i
+src/GlyphPattern.i: src/GlyphPattern.cpp.i
+.PHONY : src/GlyphPattern.i
 
 # target to preprocess a source file
-src/config_reader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/config_reader.cpp.i
-.PHONY : src/config_reader.cpp.i
+src/GlyphPattern.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/GlyphPattern.cpp.i
+.PHONY : src/GlyphPattern.cpp.i
 
-src/config_reader.s: src/config_reader.cpp.s
-.PHONY : src/config_reader.s
+src/GlyphPattern.s: src/GlyphPattern.cpp.s
+.PHONY : src/GlyphPattern.s
 
 # target to generate assembly for a file
-src/config_reader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/config_reader.cpp.s
-.PHONY : src/config_reader.cpp.s
+src/GlyphPattern.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/GlyphPattern.cpp.s
+.PHONY : src/GlyphPattern.cpp.s
 
-src/glyphs.o: src/glyphs.cpp.o
-.PHONY : src/glyphs.o
+src/ImageMaker.o: src/ImageMaker.cpp.o
+.PHONY : src/ImageMaker.o
 
 # target to build an object file
-src/glyphs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/glyphs.cpp.o
-.PHONY : src/glyphs.cpp.o
+src/ImageMaker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/ImageMaker.cpp.o
+.PHONY : src/ImageMaker.cpp.o
 
-src/glyphs.i: src/glyphs.cpp.i
-.PHONY : src/glyphs.i
+src/ImageMaker.i: src/ImageMaker.cpp.i
+.PHONY : src/ImageMaker.i
 
 # target to preprocess a source file
-src/glyphs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/glyphs.cpp.i
-.PHONY : src/glyphs.cpp.i
+src/ImageMaker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/ImageMaker.cpp.i
+.PHONY : src/ImageMaker.cpp.i
 
-src/glyphs.s: src/glyphs.cpp.s
-.PHONY : src/glyphs.s
+src/ImageMaker.s: src/ImageMaker.cpp.s
+.PHONY : src/ImageMaker.s
 
 # target to generate assembly for a file
-src/glyphs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/glyphs.cpp.s
-.PHONY : src/glyphs.cpp.s
+src/ImageMaker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/ImageMaker.cpp.s
+.PHONY : src/ImageMaker.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -201,30 +201,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/makeColorSet.o: src/makeColorSet.cpp.o
-.PHONY : src/makeColorSet.o
-
-# target to build an object file
-src/makeColorSet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/makeColorSet.cpp.o
-.PHONY : src/makeColorSet.cpp.o
-
-src/makeColorSet.i: src/makeColorSet.cpp.i
-.PHONY : src/makeColorSet.i
-
-# target to preprocess a source file
-src/makeColorSet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/makeColorSet.cpp.i
-.PHONY : src/makeColorSet.cpp.i
-
-src/makeColorSet.s: src/makeColorSet.cpp.s
-.PHONY : src/makeColorSet.s
-
-# target to generate assembly for a file
-src/makeColorSet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/makeColorSet.cpp.s
-.PHONY : src/makeColorSet.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,18 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_app"
-	@echo "... src/config_reader.o"
-	@echo "... src/config_reader.i"
-	@echo "... src/config_reader.s"
-	@echo "... src/glyphs.o"
-	@echo "... src/glyphs.i"
-	@echo "... src/glyphs.s"
+	@echo "... src/GlyphPattern.o"
+	@echo "... src/GlyphPattern.i"
+	@echo "... src/GlyphPattern.s"
+	@echo "... src/ImageMaker.o"
+	@echo "... src/ImageMaker.i"
+	@echo "... src/ImageMaker.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/makeColorSet.o"
-	@echo "... src/makeColorSet.i"
-	@echo "... src/makeColorSet.s"
 .PHONY : help
 
 

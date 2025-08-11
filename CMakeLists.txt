@@ -11,10 +11,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 add_executable(my_app 
 	src/main.cpp
-	src/glyphs.cpp
-	src/config_reader.cpp
-	src/makeColorSet.cpp)
-
+	src/GlyphPattern.cpp
+	src/ImageMaker.cpp
+)
 target_include_directories(my_app PRIVATE
 	${CMAKE_SOURCE_DIR}/dependencies
 	${CMAKE_SOURCE_DIR}/include

@@ -15,7 +15,7 @@ static std::unique_ptr<ImagePattern> ImageMaker::choicePattern(std::string userI
 			return std::make_unique<WormPattern>(config);
 		*/
 		default:
-			std::cerr << "Error. Unknown pattern, try again."
+			std::cerr << "Error. Unknown pattern, try again.";
 			return nullptr;
 	}
 }
