@@ -1,15 +1,11 @@
 #include "GlyphPattern.h"
+#include <iostream>
 #include <cstdlib>
 
 GlyphPattern::GlyphPattern(json& config)
 {
 	height = config["general"]["height"].get<int>();
 	width = config["general"]["width"].get<int>();
-
-	if(config["glyphs"]["inTiles"].get<bool>()){
-		height = (height*(fontSize+fontPadding)+fontPadding);
-		width = (width*(fontSize+fontPadding)+fontPadding);
-	}
 
 	fontSize = config["glyphs"]["fontSize"].get<int>();
 	fontPadding = config["glyphs"]["fontPadding"].get<int>();
@@ -18,10 +14,15 @@ GlyphPattern::GlyphPattern(json& config)
 	fontFamilySet += config["glyphs"]["fontFamilySet"].get<std::string>();
 	glyphSet = config["glyphs"]["glyphSet"].get<std::string>();
 
+	if(config["glyphs"]["inTiles"].get<bool>()){
+		height = (height*(fontSize+fontPadding)+fontPadding);
+		width = (width*(fontSize+fontPadding)+fontPadding);
+	}
+
 	colorSetSize = config["glyphs"]["colorSetSize"].get<int>();
-	backGroundColor = (config["general"]["background_color"].get<std::string>());
+	backGroundColor = (config["general"]["backGroundColor"].get<std::string>());
 	for(int i = 0; i < colorSetSize; i++){
-	colorSet[i] = (config["glyphs"]["colorSet"][i].get<std::string>());
+	colorSet.push_back( (config["glyphs"]["colorSet"][i].get<std::string>()) );
 	}
 }
 

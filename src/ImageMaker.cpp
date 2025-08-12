@@ -3,24 +3,22 @@
 #include "ImageMaker.h"
 #include "GlyphPattern.h"
 
-static std::unique_ptr<ImagePattern> ImageMaker::choicePattern(std::string userInput)
+std::unique_ptr<ImagePattern> ImageMaker::choicePattern(std::string userInput)
 {
-	switch(userInput){
-		case "Glyph":
-			return std::make_unique<GlyphPattern>(config);
+	if (userInput == "Glyph") return std::make_unique<GlyphPattern>(config);
 		/*
 		case "Wave":
 			return std::make_unique<WavePattern>(config);
 		case "Worm":
 			return std::make_unique<WormPattern>(config);
 		*/
-		default:
-			std::cerr << "Error. Unknown pattern, try again.";
-			return nullptr;
+	else{
+		std::cerr << "Error. Unknown pattern, try again.";
+		return nullptr;
 	}
 }
 
-bool ImagePattern::readConfig()
+bool ImageMaker::readConfig()
 {
 	//TODO make path to config like parameter, and give user 
 	//change path in runtime

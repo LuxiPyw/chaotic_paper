@@ -13,7 +13,8 @@ int main (int argc,char *argv[])
 	image.readConfig();
 	std::string userInput;
 	std::cin >> userInput;
-	image.choicePattern(userInput);
+	auto temp = image.choicePattern(userInput);
+	temp->draw();
 	return 0;
 
 }

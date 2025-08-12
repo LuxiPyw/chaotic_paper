@@ -1,18 +1,18 @@
 {
 	"general":{
-		"image_height":50,
-		"image_width":50,
-		"image_scale":1,
-		"background_color":"#000000"
+		"height":3,
+		"width":3,
+		"resizeScale":1,
+		"backGroundColor":"#000000"
 	},
 	"glyphs":{
 		"inTiles":true,
 		"antiAliasing":true,
-		"glyph_set":"10",
-		"font_family_set":"Hack.ttf",
-		"font_size":10,
-		"font_padding":2,
-		"color_set_size":3,
-		"color_set":["#7123dd","#571ea8","#32096b"]
+		"glyphSet":"0",
+		"fontFamilySet":"Hack.ttf",
+		"fontSize":10,
+		"fontPadding":2,
+		"colorSetSize":3,
+		"colorSet":["#7123dd","#571ea8","#32096b"]
 	}
 }

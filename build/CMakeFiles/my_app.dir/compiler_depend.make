@@ -48,10 +48,9 @@
   /usr/lib/libxcb.so.1 \
   /usr/lib/libxml2.so.16 \
   /usr/lib/libz.so.1 \
-  CMakeFiles/my_app.dir/src/config_reader.cpp.o \
-  CMakeFiles/my_app.dir/src/glyphs.cpp.o \
-  CMakeFiles/my_app.dir/src/main.cpp.o \
-  CMakeFiles/my_app.dir/src/makeColorSet.cpp.o
+  CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o \
+  CMakeFiles/my_app.dir/src/ImageMaker.cpp.o \
+  CMakeFiles/my_app.dir/src/main.cpp.o
 
 CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o: /home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp \
   /home/luxipew/Documents/projects/wallpaper_generator/dependencies/nlohmann/json.hpp \
@@ -424,6 +423,7 @@ CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o: /home/luxipew/Documents/projects/w
   /usr/include/c++/15.1.1/iomanip \
   /usr/include/c++/15.1.1/ios \
   /usr/include/c++/15.1.1/iosfwd \
+  /usr/include/c++/15.1.1/iostream \
   /usr/include/c++/15.1.1/istream \
   /usr/include/c++/15.1.1/iterator \
   /usr/include/c++/15.1.1/limits \
@@ -1657,9 +1657,9 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 
 /usr/include/c++/15.1.1/bits/ptr_traits.h:
 
-/usr/include/c++/15.1.1/iostream:
-
 /usr/include/c++/15.1.1/pstl/glue_memory_defs.h:
+
+/usr/include/c++/15.1.1/iostream:
 
 /usr/include/c++/15.1.1/bits/predefined_ops.h:
 
@@ -1684,6 +1684,10 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/15.1.1/bits/locale_facets.h:
+
+/usr/include/c++/15.1.1/ratio:
+
+/usr/include/c++/15.1.1/bits/locale_conv.h:
 
 /usr/include/c++/15.1.1/bits/ios_base.h:
 
@@ -1767,8 +1771,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 
 /usr/include/bits/types/struct_timeval.h:
 
-/usr/include/bits/types/struct_timespec.h:
-
 /usr/include/ImageMagick-7/MagickCore/timer.h:
 
 /usr/include/c++/15.1.1/cwctype:
@@ -1823,6 +1825,8 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 
 /usr/include/ImageMagick-7/Magick++/Geometry.h:
 
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o:
+
 /usr/include/ImageMagick-7/MagickCore/decorate.h:
 
 /usr/include/ImageMagick-7/MagickCore/image.h:
@@ -1869,6 +1873,8 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 
 /usr/include/ImageMagick-7/MagickCore/animate.h:
 
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.o:
+
 /usr/include/ImageMagick-7/Magick++/TypeMetric.h:
 
 /usr/include/ImageMagick-7/MagickCore/image-view.h:
@@ -1894,18 +1900,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 /usr/include/c++/15.1.1/fstream:
 
 /usr/include/asm/types.h:
-
-/usr/include/ImageMagick-7/MagickCore/distribute-cache.h:
-
-/usr/include/ImageMagick-7/MagickCore/linked-list.h:
-
-/usr/lib/libm.so:
-
-/usr/include/ImageMagick-7/MagickCore/fx.h:
-
-/usr/include/ImageMagick-7/Magick++/Drawable.h:
-
-/usr/lib/libgcc_s.so.1:
 
 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
@@ -1961,8 +1955,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 
 /usr/include/ImageMagick-7/MagickWand/deprecate.h:
 
-/usr/include/bits/types/sigset_t.h:
-
 /usr/include/c++/15.1.1/bit:
 
 /usr/include/ImageMagick-7/MagickCore/monitor.h:
@@ -1975,6 +1967,12 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 
 /usr/include/ImageMagick-7/MagickCore/paint.h:
 
+/usr/include/c++/15.1.1/debug/debug.h:
+
+/usr/include/ImageMagick-7/MagickCore/deprecate.h:
+
+/usr/lib/libgcc_s.so:
+
 /usr/include/ImageMagick-7/MagickCore/color.h:
 
 /usr/include/ImageMagick-7/MagickCore/xwindow.h:
@@ -1982,12 +1980,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 /usr/include/ImageMagick-7/MagickWand/pixel-wand.h:
 
 /usr/include/bits/iscanonical.h:
-
-/usr/include/c++/15.1.1/debug/debug.h:
-
-/usr/include/ImageMagick-7/MagickCore/deprecate.h:
-
-/usr/lib/libgcc_s.so:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
@@ -2026,6 +2018,10 @@ CMakeFiles/my_app.dir/src/main.cpp.o: /home/luxipew/Documents/projects/wallpaper
 /usr/include/bits/time64.h:
 
 /usr/lib/libm.so.6:
+
+/usr/lib/libgcc_s.so.1:
+
+/usr/include/ImageMagick-7/Magick++/Drawable.h:
 
 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
@@ -2095,6 +2091,12 @@ CMakeFiles/my_app.dir/src/main.cpp.o:
 
 /usr/include/ImageMagick-7/Magick++/Pixels.h:
 
+/usr/lib/libm.so:
+
+/usr/include/ImageMagick-7/MagickCore/distribute-cache.h:
+
+/usr/include/ImageMagick-7/MagickCore/linked-list.h:
+
 /usr/include/c++/15.1.1/typeinfo:
 
 /usr/lib/libglib-2.0.so.0:
@@ -2131,6 +2133,8 @@ CMakeFiles/my_app.dir/src/main.cpp.o:
 
 /usr/lib/libmvec.so.1:
 
+/usr/include/ImageMagick-7/MagickCore/fx.h:
+
 /usr/include/ImageMagick-7/MagickCore/MagickCore.h:
 
 /usr/include/bits/uintn-identity.h:
@@ -2141,11 +2145,11 @@ CMakeFiles/my_app.dir/src/main.cpp.o:
 
 /usr/include/bits/cpu-set.h:
 
-/usr/include/c++/15.1.1/ratio:
+/usr/include/c++/15.1.1/unordered_map:
 
-/usr/include/c++/15.1.1/bits/locale_conv.h:
+/usr/include/ImageMagick-7/Magick++/STL.h:
 
-CMakeFiles/my_app.dir/src/glyphs.cpp.o:
+/usr/include/ImageMagick-7/MagickCore/morphology.h:
 
 /usr/include/ImageMagick-7/MagickCore/channel.h:
 
@@ -2180,12 +2184,6 @@ CMakeFiles/my_app.dir/src/glyphs.cpp.o:
 /usr/include/c++/15.1.1/bits/locale_classes.tcc:
 
 /usr/include/ImageMagick-7/Magick++/Blob.h:
-
-/usr/include/c++/15.1.1/unordered_map:
-
-/usr/include/ImageMagick-7/Magick++/STL.h:
-
-/usr/include/ImageMagick-7/MagickCore/morphology.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -2307,8 +2305,6 @@ CMakeFiles/my_app.dir/src/glyphs.cpp.o:
 
 /usr/include/ImageMagick-7/MagickWand/magick-cli.h:
 
-CMakeFiles/my_app.dir/src/config_reader.cpp.o:
-
 /usr/include/ImageMagick-7/MagickWand/magick-property.h:
 
 /usr/include/c++/15.1.1/bits/node_handle.h:
@@ -2328,8 +2324,6 @@ CMakeFiles/my_app.dir/src/config_reader.cpp.o:
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/ImageMagick-7/MagickCore/magick.h:
-
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.o:
 
 /usr/include/ImageMagick-7/MagickWand/wandcli.h:
 
@@ -2493,6 +2487,10 @@ CMakeFiles/my_app.dir/src/makeColorSet.cpp.o:
 
 /usr/include/bits/types/mbstate_t.h:
 
+/usr/include/bits/types/sigset_t.h:
+
 /usr/include/bits/types/struct_FILE.h:
 
 /usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/bits/types/struct_timespec.h:

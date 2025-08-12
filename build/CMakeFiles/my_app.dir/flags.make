@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/luxipew/Documents/projects/wallpaper_generator/dependencies -I/home/luxipew/Documents/projects/wallpaper_generator/include -isystem /usr/include/ImageMagick-7
 
-CXX_FLAGS = -std=c++17 -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -DMAGICKCORE_CHANNEL_MASK_DEPTH=32
+CXX_FLAGS = -g -std=c++17 -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -DMAGICKCORE_CHANNEL_MASK_DEPTH=32
 

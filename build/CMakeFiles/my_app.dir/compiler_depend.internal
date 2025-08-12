@@ -49,10 +49,9 @@
  /usr/lib/libxcb.so.1
  /usr/lib/libxml2.so.16
  /usr/lib/libz.so.1
- /home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir/src/config_reader.cpp.o
- /home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir/src/glyphs.cpp.o
+ /home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o
+ /home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir/src/ImageMaker.cpp.o
  /home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir/src/main.cpp.o
- /home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir/src/makeColorSet.cpp.o
 
 CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o
  /home/luxipew/Documents/projects/wallpaper_generator/src/GlyphPattern.cpp
@@ -426,6 +425,7 @@ CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o
  /usr/include/c++/15.1.1/iomanip
  /usr/include/c++/15.1.1/ios
  /usr/include/c++/15.1.1/iosfwd
+ /usr/include/c++/15.1.1/iostream
  /usr/include/c++/15.1.1/istream
  /usr/include/c++/15.1.1/iterator
  /usr/include/c++/15.1.1/limits

@@ -3,9 +3,8 @@
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/my_app.dir/src/main.cpp.o \
-  CMakeFiles/my_app.dir/src/glyphs.cpp.o \
-  CMakeFiles/my_app.dir/src/config_reader.cpp.o \
-  CMakeFiles/my_app.dir/src/makeColorSet.cpp.o \
+  CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o \
+  CMakeFiles/my_app.dir/src/ImageMaker.cpp.o \
   /usr/lib/libMagick++-7.Q16HDRI.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -73,11 +72,9 @@
 
 CMakeFiles/my_app.dir/src/main.cpp.o:
 
-CMakeFiles/my_app.dir/src/glyphs.cpp.o:
+CMakeFiles/my_app.dir/src/GlyphPattern.cpp.o:
 
-CMakeFiles/my_app.dir/src/config_reader.cpp.o:
-
-CMakeFiles/my_app.dir/src/makeColorSet.cpp.o:
+CMakeFiles/my_app.dir/src/ImageMaker.cpp.o:
 
 /usr/lib/libMagick++-7.Q16HDRI.so:
 

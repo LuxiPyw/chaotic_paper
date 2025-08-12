@@ -9,7 +9,7 @@ class ImageMaker {
 public:
 	json config;
 	bool readConfig();
-	static std::unique_ptr<ImagePattern> choicePattern (std::string);
+	std::unique_ptr<ImagePattern> choicePattern (std::string);
 };
 
 
