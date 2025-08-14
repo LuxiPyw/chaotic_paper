@@ -13,4 +13,10 @@ protected:
 	std::string glyphSet;
 	int colorSetSize;
 	std::vector<std::string> colorSet;
+	bool antiAliasing;
+	std::map<char, Image> cache;
+
+private:
+	void makeGlyphPreRender();
+	void initializeImage(Image&);
 };

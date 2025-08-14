@@ -5,9 +5,13 @@ For build you need make and cmake.
 ```
 git clone https://github.com/LuxiPyw/chaotic_paper
 cd chaotic_paper
+mkdir build
 cd build
 cmake ..
 make
+cd ..
+cd bin
+./my_app
 ```
 
 # Config

@@ -1,3 +1,0 @@
-/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/my_app.dir
-/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/edit_cache.dir
-/home/luxipew/Documents/projects/wallpaper_generator/build/CMakeFiles/rebuild_cache.dir

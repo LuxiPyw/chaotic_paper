@@ -1,7 +1,7 @@
 {
 	"general":{
-		"height":3,
-		"width":3,
+		"height":10,
+		"width":10,
 		"resizeScale":1,
 		"backGroundColor":"#000000"
 	},
