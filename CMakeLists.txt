@@ -9,14 +9,15 @@ find_package(ImageMagick COMPONENTS Magick++ REQUIRED)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
-add_executable(my_app 
+add_executable(chaoticPaper 
 	src/main.cpp
 	src/GlyphPattern.cpp
 	src/ImageMaker.cpp
+	src/WebPattern.cpp
 )
-target_include_directories(my_app PRIVATE
+target_include_directories(chaoticPaper PRIVATE
 	${CMAKE_SOURCE_DIR}/dependencies
 	${CMAKE_SOURCE_DIR}/include
 )
 
-target_link_libraries(my_app PRIVATE ImageMagick::Magick++)
+target_link_libraries(chaoticPaper PRIVATE ImageMagick::Magick++)

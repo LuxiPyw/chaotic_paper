@@ -2,12 +2,17 @@
 #include <fstream>
 #include "ImageMaker.h"
 #include "GlyphPattern.h"
+#include "WebPattern.h"
 
 std::unique_ptr<ImagePattern> ImageMaker::choicePattern(std::string userInput)
 {
 	if (userInput == "Glyph") return std::make_unique<GlyphPattern>(config);
+
+	else if (userInput == "Web"){
+		std::cout << "1";
+		return std::make_unique<WebPattern>(config);
+	}
 		/*
-		case "Wave":
 			return std::make_unique<WavePattern>(config);
 		case "Worm":
 			return std::make_unique<WormPattern>(config);

@@ -1,6 +1,6 @@
 #include "GlyphPattern.h"
 #include <iostream>
-#include <cstdlib>
+#include <random>
 
 GlyphPattern::GlyphPattern(json& config)
 {
@@ -35,7 +35,8 @@ void GlyphPattern::draw()
 {
 	makeGlyphPreRender();
 
-	std::srand(static_cast<unsigned int>(time(nullptr)));
+	std::random_device random;
+	std::mt19937 gen(random());
 
 	Image canvas;
 	canvas.size(Geometry(width,height));
@@ -43,16 +44,13 @@ void GlyphPattern::draw()
 
 	for (int y = fontPadding; y + fontSize <= height; y += fontSize+fontPadding) {
 		for (int x = fontPadding; x + fontSize <= width; x += fontSize+fontPadding) {
-
-
-			std::string randGlyph = std::string(1, glyphSet[rand() % glyphSet.size()]);
+			
+			std::string randGlyph = std::string(1, glyphSet[gen() % glyphSet.size()]);
 			Image preRenderedGlyph = cache[randGlyph[0]];
-			std::string randColor = colorSet[rand() % colorSetSize];
+			std::string randColor = colorSet[gen() % colorSetSize];
 			Color finalColor(randColor);
-
 			preRenderedGlyph.colorize(100,finalColor);
 			canvas.composite(preRenderedGlyph, x, y, OverCompositeOp);
-
 		}
 	}
 	canvas.filterType(PointFilter);
@@ -68,7 +66,6 @@ void GlyphPattern::makeGlyphPreRender()
 		glyphImage.annotate(std::string(1,glyphSet[i]), Magick::CenterGravity);
 		cache[glyphSet[i]] = glyphImage;
 	}
-
 }
 
 void GlyphPattern::initializeImage(Image& img)
@@ -81,5 +78,4 @@ void GlyphPattern::initializeImage(Image& img)
 		img.strokeAntiAlias(false);
 		img.textAntiAlias(false);
 	}
-
 }

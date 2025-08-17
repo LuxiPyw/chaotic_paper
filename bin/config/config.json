@@ -1,7 +1,7 @@
 {
 	"general":{
-		"height":10,
-		"width":10,
+		"height":1500,
+		"width":800,
 		"resizeScale":1,
 		"backGroundColor":"#000000"
 	},
@@ -14,5 +14,13 @@
 		"fontPadding":2,
 		"colorSetSize":3,
 		"colorSet":["#7123dd","#571ea8","#32096b"]
+	},
+	"web":{
+		"numberOfNodes":150,
+		"maxNumberOfconnections":1,
+		"minNumberOfconnections":1,
+		"nodeColor":"#7123dd",
+		"connectionColor":"#7123dd"
+
 	}
 }
