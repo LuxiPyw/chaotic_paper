@@ -14,7 +14,7 @@ bool WebPattern::Point::operator == (const Point& point) const
 	return false;
 }
 
-WebPattern::WebPattern(json& config)
+WebPattern::WebPattern(nlohmann::json& config)
 {
 	height = config["general"]["height"].get<int>();
 	width = config["general"]["width"].get<int>();
@@ -31,22 +31,20 @@ WebPattern::WebPattern(json& config)
 }
 void WebPattern::draw ()
 {
-	std::cout << "2";
-	Image canvas;
-	canvas.size(Geometry(width,height));
-	canvas.backgroundColor(Color(backGroundColor));
+	Magick::Image canvas;
+	canvas.size(Magick::Geometry(width,height));
+	canvas.backgroundColor(Magick::Color(backGroundColor));
 
 	std::vector<Point> points;
 	placeNode(points);
 	makeConnetions(canvas, points);
 
-	canvas.resize(Geometry(width*resizeScale,height*resizeScale));
+	canvas.resize(Magick::Geometry(width*resizeScale,height*resizeScale));
 	canvas.write("output.png");
 }
 
 void WebPattern::placeNode(std::vector<Point>& points) 
 {
-	std::cout << "3";
 	std::random_device random;
 	std::mt19937 gen(random());
 	for(int i = 0; i < numberOfNodes; i++){
@@ -56,9 +54,8 @@ void WebPattern::placeNode(std::vector<Point>& points)
 	}
 }
 
-void WebPattern::makeConnetions(Image& img, std::vector<Point>& points)
+void WebPattern::makeConnetions(Magick::Image& img, std::vector<Point>& points)
 {
-	std::cout << "4";
 	std::random_device random;
 	std::mt19937 gen(random());
 	std::uniform_int_distribution<> dist(minNumberOfconnections,maxNumberOfconnections);
@@ -67,7 +64,7 @@ void WebPattern::makeConnetions(Image& img, std::vector<Point>& points)
 		std::vector<Point> usedPoints;
 		usedPoints.push_back(points[i]);
 
-		img.pixelColor(points[i].x, points[i].y,Color(nodeColor));
+		img.pixelColor(points[i].x, points[i].y,Magick::Color(nodeColor));
 		int numberOfConnections = dist(gen);
 
 		for(int j = 0; j < numberOfConnections; j++){
@@ -81,7 +78,7 @@ void WebPattern::makeConnetions(Image& img, std::vector<Point>& points)
 			}
 			usedPoints.push_back(points[randomPoint]);
 			
-			img.strokeColor(Color(connectionColor));
+			img.strokeColor(Magick::Color(connectionColor));
 			img.strokeWidth(1);
 			img.draw(Magick::DrawableLine(points[i].x, points[i].y, points[randomPoint].x, points[randomPoint].y));
 			//WHERE I NEED MAKE DRAW LINE AND CONFIG THIS LINE

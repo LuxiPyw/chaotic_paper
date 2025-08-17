@@ -9,7 +9,6 @@ std::unique_ptr<ImagePattern> ImageMaker::choicePattern(std::string userInput)
 	if (userInput == "Glyph") return std::make_unique<GlyphPattern>(config);
 
 	else if (userInput == "Web"){
-		std::cout << "1";
 		return std::make_unique<WebPattern>(config);
 	}
 		/*
@@ -36,7 +35,7 @@ bool ImageMaker::readConfig()
 	try {
 		file >> config;
 	}
-	catch (const json::parse_error &e) {
+	catch (const nlohmann::json::parse_error &e) {
 		std::cerr << "JSON parse error: " << e.what()
 			<< "\nByte position: " << e.byte << "\n";
 		return 0;

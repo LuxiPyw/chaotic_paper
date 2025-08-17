@@ -3,7 +3,7 @@
 
 class WebPattern : public ImagePattern {
 public:
-	WebPattern(json&);
+	WebPattern(nlohmann::json&);
 
 	void draw() override;
 
@@ -18,7 +18,7 @@ private:
 
 	void placeNode (std::vector<WebPattern::Point>&);
 
-	void makeConnetions (Image&, std::vector<WebPattern::Point>&);
+	void makeConnetions (Magick::Image&, std::vector<WebPattern::Point>&);
 
 	int numberOfNodes;
 	int maxNumberOfconnections;

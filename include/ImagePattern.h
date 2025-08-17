@@ -2,8 +2,6 @@
 #include <string>
 #include <Magick++.h>
 #include <nlohmann/json.hpp>
-using json = nlohmann::json;
-using namespace Magick;
 
 class ImagePattern {
 public:

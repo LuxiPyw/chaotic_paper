@@ -2,7 +2,7 @@
 #include <iostream>
 #include <random>
 
-GlyphPattern::GlyphPattern(json& config)
+GlyphPattern::GlyphPattern(nlohmann::json& config)
 {
 	height = config["general"]["height"].get<int>();
 	width = config["general"]["width"].get<int>();
@@ -38,37 +38,37 @@ void GlyphPattern::draw()
 	std::random_device random;
 	std::mt19937 gen(random());
 
-	Image canvas;
-	canvas.size(Geometry(width,height));
-	canvas.backgroundColor(Color(backGroundColor));
+	Magick::Image canvas;
+	canvas.size(Magick::Geometry(width,height));
+	canvas.backgroundColor(Magick::Color(backGroundColor));
 
 	for (int y = fontPadding; y + fontSize <= height; y += fontSize+fontPadding) {
 		for (int x = fontPadding; x + fontSize <= width; x += fontSize+fontPadding) {
 			
 			std::string randGlyph = std::string(1, glyphSet[gen() % glyphSet.size()]);
-			Image preRenderedGlyph = cache[randGlyph[0]];
+			Magick::Image preRenderedGlyph = cache[randGlyph[0]];
 			std::string randColor = colorSet[gen() % colorSetSize];
-			Color finalColor(randColor);
+			Magick::Color finalColor(randColor);
 			preRenderedGlyph.colorize(100,finalColor);
-			canvas.composite(preRenderedGlyph, x, y, OverCompositeOp);
+			canvas.composite(preRenderedGlyph, x, y, Magick::OverCompositeOp);
 		}
 	}
-	canvas.filterType(PointFilter);
-	canvas.resize(Geometry(width*resizeScale,height*resizeScale));
+	canvas.filterType(Magick::PointFilter);
+	canvas.resize(Magick::Geometry(width*resizeScale,height*resizeScale));
 	canvas.write("output.png");
 }
 
 void GlyphPattern::makeGlyphPreRender()
 {
 	for(int i = 0; i < glyphSet.size(); i++){
-		Image glyphImage (Geometry(fontSize, fontSize), "transparent");
+		Magick::Image glyphImage (Magick::Geometry(fontSize, fontSize), "transparent");
 		initializeImage(glyphImage);
 		glyphImage.annotate(std::string(1,glyphSet[i]), Magick::CenterGravity);
 		cache[glyphSet[i]] = glyphImage;
 	}
 }
 
-void GlyphPattern::initializeImage(Image& img)
+void GlyphPattern::initializeImage(Magick::Image& img)
 {
 	img.font(fontFamilySet);
 	img.fillColor("white"); 

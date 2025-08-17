@@ -4,7 +4,7 @@
 
 class GlyphPattern : public ImagePattern{
 public:
-	GlyphPattern (json&);
+	GlyphPattern (nlohmann::json&);
 	void draw() override;
 protected:
 	int fontSize;
@@ -14,9 +14,9 @@ protected:
 	int colorSetSize;
 	std::vector<std::string> colorSet;
 	bool antiAliasing;
-	std::map<char, Image> cache;
+	std::map<char, Magick::Image> cache;
 
 private:
 	void makeGlyphPreRender();
-	void initializeImage(Image&);
+	void initializeImage(Magick::Image&);
 };
