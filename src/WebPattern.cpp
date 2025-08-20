@@ -1,9 +1,7 @@
 #include "WebPattern.h"
 #include <vector>
-#include <iostream>
+#include <algorithm>
 #include <random>
-
-//I NEED REMAKE ALL FILES TO REMOVE ALL USING & USING NAMESPACE
 
 WebPattern::Point::Point (int x, int y) : x{x}, y{y} {}
 
@@ -29,6 +27,7 @@ WebPattern::WebPattern(nlohmann::json& config)
 	nodeColor = config["web"]["nodeColor"].get<std::string>();
 	connectionColor = config["web"]["connectionColor"].get<std::string>();
 }
+
 void WebPattern::draw ()
 {
 	Magick::Image canvas;
@@ -60,29 +59,19 @@ void WebPattern::makeConnetions(Magick::Image& img, std::vector<Point>& points)
 	std::mt19937 gen(random());
 	std::uniform_int_distribution<> dist(minNumberOfconnections,maxNumberOfconnections);
 
-	for(int i = 0; i < numberOfNodes; i++){
-		std::vector<Point> usedPoints;
-		usedPoints.push_back(points[i]);
+	for(int nodeIdex = 0; nodeIdex < numberOfNodes; nodeIdex++){
+		std::vector<Point> samplePoints(points);
+		samplePoints.erase(std::begin(samplePoints) + nodeIdex);
 
-		img.pixelColor(points[i].x, points[i].y,Magick::Color(nodeColor));
+		img.pixelColor(points[nodeIdex].x, points[nodeIdex].y,Magick::Color(nodeColor));
 		int numberOfConnections = dist(gen);
+		std::shuffle(std::begin(samplePoints),std::end(samplePoints),random);
 
-		for(int j = 0; j < numberOfConnections; j++){
-			findPoint:
-			int randomPoint = gen() % points.size();
-
-			for(int k = 0; k < usedPoints.size(); k++){
-				if(points[randomPoint] == usedPoints[k]){
-					goto findPoint;
-				}
-			}
-			usedPoints.push_back(points[randomPoint]);
-			
+		for(int connectionIdex = 0; connectionIdex < numberOfConnections; connectionIdex++){
 			img.strokeColor(Magick::Color(connectionColor));
 			img.strokeWidth(1);
-			img.draw(Magick::DrawableLine(points[i].x, points[i].y, points[randomPoint].x, points[randomPoint].y));
-			//WHERE I NEED MAKE DRAW LINE AND CONFIG THIS LINE
+			img.draw(Magick::DrawableLine(points[nodeIdex].x, points[nodeIdex].y,
+			samplePoints[connectionIdex].x, samplePoints[connectionIdex].y));
 		}
 	}
-	
 }
